@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item
+                android:id="@+id/menu_opcion_1"
+                android:title="HOME"/>
+            <item
+                android:id="@+id/menu_opcion_2"
+                android:title="INVITADOS"/>
+            <item
+                android:id="@+id/menu_opcion_3"
+                android:title="MENSAJERIA"/>
+</menu>

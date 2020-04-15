@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_logo_combinado"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="18dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <EditText
+            android:id="@+id/user_editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_account"
+            android:drawableStart="@drawable/ic_account"
+            android:background="@drawable/rounded_editext"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pass_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_cardview"
+        android:layout_margin="10dp"
+        android:elevation="18dp"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/password_editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:padding="10dp"
+            android:inputType="numberPassword"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawableStart="@drawable/ic_password"
+            android:background="@drawable/rounded_editext"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/pass_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/orange_400"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/pass_cardview"
+        android:text="Olvidó su contraseña?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/orange_400"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/pass_forget"
+        android:text="Registrarme"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="20dp"
+        android:text="LOGIN"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
