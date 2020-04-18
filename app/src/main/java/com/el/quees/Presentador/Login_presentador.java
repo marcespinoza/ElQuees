@@ -23,4 +23,9 @@ public class Login_presentador implements Login_interface.iPresentador {
     public void return_login() {
         lvista.login_result();
     }
+
+    @Override
+    public void retornarMensaje(String mensaje) {
+        lvista.mostrarMensaje(mensaje);
+    }
 }

@@ -44,7 +44,6 @@
                 android:src="@drawable/fondo"
                 android:scaleType="centerCrop"/>
 
-
         </LinearLayout>
 
 
@@ -58,6 +57,9 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:layout_gravity="start"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:background="@color/main"
         app:headerLayout="@layout/header_navview"
         app:menu="@menu/menu_navview"/>
 

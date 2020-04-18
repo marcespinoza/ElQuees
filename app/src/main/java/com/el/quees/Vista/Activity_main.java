@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.MenuItem;
 
 import com.el.quees.R;
+import com.el.quees.Vista.Fragment.Fragment_Da;
 import com.el.quees.Vista.Fragment.Fragment_main;
 import com.google.android.material.navigation.NavigationView;
 
@@ -45,6 +46,9 @@ public class Activity_main extends AppCompatActivity {
                         switch (menuItem.getItemId()) {
                             case R.id.menu_opcion_1:
                                 Log.i("NavigationView", "Pulsada opción 1");
+                                break;
+                            case R.id.menu_opcion_4:
+                                fragment = new Fragment_Da();
                                 break;
                         }
 

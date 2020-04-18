@@ -9,10 +9,12 @@ public interface Login_interface  {
     interface iPresentador{
         void login(String u, String p);
         void return_login();
+        void retornarMensaje(String mensaje);
     }
 
     interface iVista{
         void login_result();
+        void mostrarMensaje(String mensaje);
     }
 
 }

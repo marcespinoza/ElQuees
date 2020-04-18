@@ -50,12 +50,21 @@ public class Activity_login extends AppCompatActivity implements Login_interface
 
     }
 
-
+    @OnClick(R.id.register_button)
+    public void registerUser(){
+        Intent i = new Intent(Activity_login.this, Activity_register.class);
+        startActivity(i);
+    }
 
     @Override
     public void login_result() {
         progressDialog.finishDialog();
         Intent i = new Intent(this, Activity_main.class);
         startActivity(i);
+    }
+
+    @Override
+    public void mostrarMensaje(String mensaje) {
+
     }
 }

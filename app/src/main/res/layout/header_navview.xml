@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <ImageView android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:src="@drawable/ic_logotipo_header"
     xmlns:android="http://schemas.android.com/apk/res/android"/>
+</RelativeLayout>

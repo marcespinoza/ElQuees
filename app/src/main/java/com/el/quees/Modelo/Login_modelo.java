@@ -1,5 +1,7 @@
 package com.el.quees.Modelo;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.el.quees.Interface.ApiInterface;
@@ -7,31 +9,30 @@ import com.el.quees.Interface.Login_interface;
 import com.el.quees.Presentador.Login_presentador;
 import com.el.quees.Utils.MyErrorMessage;
 import com.el.quees.Utils.RetrofitClientInstance;
+import com.el.quees.Vista.GlobalApplication;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.lang.annotation.Annotation;
-import java.util.HashMap;
-import java.util.Map;
 
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
-import retrofit2.Converter;
-import retrofit2.Response;
 
 public class Login_modelo implements Login_interface.iModelo {
 
     public Login_presentador lpresentador;
+    SharedPreferences sPreferences;
+    Context context;
 
     public Login_modelo(Login_presentador lpresentador) {
         this.lpresentador = lpresentador;
+        context = GlobalApplication.getContext();
+        sPreferences = context.getSharedPreferences("quees", Context.MODE_PRIVATE);
     }
 
     @Override
@@ -59,12 +60,17 @@ public class Login_modelo implements Login_interface.iModelo {
                         JSONObject jsonObject = new JSONObject(response.body().string());
                         JSONObject jo = new JSONObject(jsonObject.getString("data"));
                         String token = jo.getString("access_token");
+                        SharedPreferences.Editor editor = sPreferences.edit();
+                        editor.putString("token", token);
+                        editor.commit();
+                        Log.i("token",""+token);
                         lpresentador.return_login();
                         // Do something here
                     } catch (JSONException e) {
 
                     }
-
+                }else{
+                    lpresentador.retornarMensaje("Error. Intente nuevamente");
                 }
             }
 

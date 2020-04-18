@@ -13,26 +13,20 @@ import com.el.quees.Interface.Main_interface;
 import com.el.quees.Presentador.Main_presentador;
 import com.el.quees.R;
 
-public class Fragment_main extends Fragment implements Main_interface.Main_vista {
+public class Fragment_Da extends Fragment implements Main_interface.Main_vista {
 
     Main_presentador mPresentador;
-
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return inflater.inflate(R.layout.fragment_da, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mPresentador = new Main_presentador(this);
-        request();
-    }
-
-    public void request(){
-        mPresentador.getDataUsers();
     }
 
     @Override

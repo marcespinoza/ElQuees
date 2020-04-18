@@ -11,15 +11,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Vista.Activity_login">
+        android:theme="@style/AppTheme"
+        android:name=".Vista.GlobalApplication">
+        <activity android:name=".Vista.Activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--
         <activity android:name=".Vista.Activity_main"/>
+-->
+        <activity android:name=".Vista.Activity_register"/>
     </application>
 
 </manifest>

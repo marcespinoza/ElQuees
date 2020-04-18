@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-            <item
-                android:id="@+id/menu_opcion_1"
-                android:title="HOME"/>
-            <item
-                android:id="@+id/menu_opcion_2"
-                android:title="INVITADOS"/>
-            <item
-                android:id="@+id/menu_opcion_3"
-                android:title="MENSAJERIA"/>
+       <item
+           android:id="@+id/menu_opcion_1"
+           android:title="HOME"
+           android:icon="@drawable/ic_home"/>
+      <item
+           android:id="@+id/menu_opcion_2"
+           android:title="INVITADOS"/>
+     <item
+          android:id="@+id/menu_opcion_3"
+          android:title="MENSAJERIA"
+         android:icon="@drawable/ic_mail"/>
+
+    <item
+        android:id="@+id/menu_opcion_4"
+        android:title="DERECHOS DE ACCIONES"/>
+    <item
+        android:id="@+id/menu_opcion_5"
+        android:title="SOCIOS ACTIVOS"/>
+    <item
+        android:id="@+id/menu_opcion_6"
+        android:icon="@drawable/ic_acciones"
+        android:title="REGALAR DERECHOS DE ACCIONES"/>
+    <item
+        android:id="@+id/menu_opcion_7"
+        android:title="REGISTRO DE PROVEEDORES"/>
+    <item
+        android:id="@+id/menu_opcion_8"
+        android:icon="@drawable/ic_faq"
+        android:title="PREGUNTAS FRECUENTES"/>
+    <item
+        android:id="@+id/menu_opcion_9"
+        android:title="CUENTA"/>
 </menu>
