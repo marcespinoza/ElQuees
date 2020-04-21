@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="15dp">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id transacción"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/grey_400"/>
+
+        <TextView
+            android:id="@+id/id_transaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue_300"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha transacción"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/grey_400"/>
+
+        <TextView
+            android:id="@+id/fecha_transaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue_300"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DA"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/grey_400"/>
+
+        <TextView
+            android:id="@+id/derechos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue_300"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Detalles"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/grey_400"/>
+
+        <TextView
+            android:id="@+id/detalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue_300"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

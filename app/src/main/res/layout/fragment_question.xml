@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title_faq"
+        android:text="FAQ - Preguntas frecuentes"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title_faq"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
