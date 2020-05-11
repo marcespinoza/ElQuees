@@ -15,6 +15,7 @@ import android.view.MenuItem;
 
 import com.el.quees.R;
 import com.el.quees.Vista.Fragment.Fragment_Da;
+import com.el.quees.Vista.Fragment.Fragment_invitados;
 import com.el.quees.Vista.Fragment.Fragment_main;
 import com.el.quees.Vista.Fragment.Fragment_questions;
 import com.google.android.material.navigation.NavigationView;
@@ -48,6 +49,9 @@ public class Activity_main extends AppCompatActivity {
                         switch (menuItem.getItemId()) {
                             case R.id.menu_opcion_1:
                                 fragment = new Fragment_main();
+                                break;
+                            case R.id.menu_opcion_2:
+                                fragment = new Fragment_invitados();
                                 break;
                             case R.id.menu_opcion_4:
                                 fragment = new Fragment_Da();
